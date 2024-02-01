@@ -1,0 +1,56 @@
+### User SignUp
+POST http://localhost:3001/api/users/signup
+Content-Type: application/json
+
+{
+    "name": "Wllysses Júnior",
+    "user_name": "wllyssesjr",
+    "email": "wllyssesjr@teste.com",
+    "password": "teste123"
+}
+
+### User SignIn
+POST http://localhost:3001/api/users/signin
+Content-Type: application/json
+
+{
+    "email": "wllyssesjr@teste.com",
+    "password": "teste123"
+}
+
+### Create Profile
+POST http://localhost:3001/api/profiles/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y3Yjg0LTM5OTItNDA2My1iNjc2LWZiZTg0NjY2OTcxMCIsIm5hbWUiOiJXbGx5c3NlcyBKw7puaW9yIiwidXNlck5hbWUiOiJ3bGx5c3Nlc2pyIiwiZW1haWwiOiJ3bGx5c3Nlc2pyQHRlc3RlLmNvbSIsImlhdCI6MTcwNjY0MTkzNSwiZXhwIjoxNzA3MjQ2NzM1fQ.znwpMNeGdZAZhZJ9KyqyYRiFMf-3p0LGTSds0kJKQL8
+
+{
+	"cau": "1234567890",
+	"phone": "83999887766",
+	"date_of_birth": "1995-04-30",
+	"city": "Juripiranga",
+	"state": "PB"
+}
+
+### Update Profile
+PUT http://localhost:3001/api/profiles/update/8f26a4af-6667-40f2-8f7d-967ec5a18d85
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y3Yjg0LTM5OTItNDA2My1iNjc2LWZiZTg0NjY2OTcxMCIsIm5hbWUiOiJXbGx5c3NlcyBKw7puaW9yIiwidXNlck5hbWUiOiJ3bGx5c3Nlc2pyIiwiZW1haWwiOiJ3bGx5c3Nlc2pyQHRlc3RlLmNvbSIsImlhdCI6MTcwNjY0MTkzNSwiZXhwIjoxNzA3MjQ2NzM1fQ.znwpMNeGdZAZhZJ9KyqyYRiFMf-3p0LGTSds0kJKQL8
+
+{
+	"cau": "1234567890",
+	"phone": "83999887766",
+	"date_of_birth": "1995-04-30",
+	"city": "Itambé",
+	"state": "PE"
+}
+
+### Register Project
+# POST http://localhost:3001/api/projects/register
+# Content-Type: multipart/form-data
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y3Yjg0LTM5OTItNDA2My1iNjc2LWZiZTg0NjY2OTcxMCIsIm5hbWUiOiJXbGx5c3NlcyBKw7puaW9yIiwidXNlck5hbWUiOiJ3bGx5c3Nlc2pyIiwiZW1haWwiOiJ3bGx5c3Nlc2pyQHRlc3RlLmNvbSIsImlhdCI6MTcwNjY0MTkzNSwiZXhwIjoxNzA3MjQ2NzM1fQ.znwpMNeGdZAZhZJ9KyqyYRiFMf-3p0LGTSds0kJKQL8
+
+
+
+### Download Project File
+GET http://localhost:3001/api/projects/download/801287fc-2e34-4874-9d54-3fd7c6b32bd2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y3Yjg0LTM5OTItNDA2My1iNjc2LWZiZTg0NjY2OTcxMCIsIm5hbWUiOiJXbGx5c3NlcyBKw7puaW9yIiwidXNlck5hbWUiOiJ3bGx5c3Nlc2pyIiwiZW1haWwiOiJ3bGx5c3Nlc2pyQHRlc3RlLmNvbSIsImlhdCI6MTcwNjY0MTkzNSwiZXhwIjoxNzA3MjQ2NzM1fQ.znwpMNeGdZAZhZJ9KyqyYRiFMf-3p0LGTSds0kJKQL8
